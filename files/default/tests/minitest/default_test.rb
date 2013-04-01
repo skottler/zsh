@@ -32,9 +32,6 @@ describe 'zsh::default' do
     zsh_doc_pkg = case node['platform']
                   when "ubuntu", "debian"
                     'zsh-doc'
-                  when "centos"
-                    'zsh-html'
-                  end
     package(zsh_doc_pkg).must_be_installed
   end
 

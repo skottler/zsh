@@ -26,8 +26,4 @@ when "debian"
   package "zsh-doc" do
     action :install
   end
-when "rhel", "fedora"
-  package "zsh-html" do
-    action :install
-  end
 end
